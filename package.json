@@ -1,0 +1,18 @@
+{
+  "name": "lite-brain",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A lightweight MCP server for managing context snippets and clipboard history using better-sqlite3.",
+  "main": "mcp-server.js",
+  "scripts": {
+    "start": "node mcp-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "better-sqlite3": "^12.9.0"
+  }
+}
