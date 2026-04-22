@@ -25,17 +25,25 @@ A lightweight, local-first **Model Context Protocol (MCP) Server** designed for 
 
 ## 📦 Installation
 
+We've made setup extremely easy. You just need to have **Node.js** installed.
+
+### Automatic Setup (Recommended)
+Simply run this command in your terminal inside the project folder:
+```bash
+node setup.js
+```
+This script will automatically detect your operating system and configure **Claude Desktop** to use `lite-brain`. 
+
+### Manual Setup
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/YOUR_USERNAME/lite-brain.git
    cd lite-brain
    ```
-
 2. **Install dependencies**:
    ```bash
    npm install
    ```
-
 3. **Configure Claude Desktop**:
    Add the following to your `claude_desktop_config.json`:
    ```json
