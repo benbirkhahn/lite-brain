@@ -13,8 +13,8 @@ db.exec(`
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     content TEXT NOT NULL,
     source TEXT DEFAULT 'browser',
-    -- This 'localtime' modifier fixes the 4-hour gap
-    created_at DATETIME DEFAULT (datetime('now', 'localtime'))
+    -- Using UTC to match server-side logic and prevent timezone variance
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   )
 `);
 
